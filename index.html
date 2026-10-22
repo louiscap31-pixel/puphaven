@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pupdoku</title>
+<meta name="description" content="Pupdoku, le casse-tête qui a du chien : placez chaque chien dans sa niche.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap">
+<style>
+:root {
+  --bg: #FAF6EF; --surface: #FFFDF9; --ink: #2B2420; --muted: #6F6259;
+  --accent: #B4532A; --on-accent: #FFF8F0; --line: #EAE1D5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1F1A17; --surface: #2B2420; --ink: #F3ECE4; --muted: #BFB2A6;
+    --accent: #E07A4A; --on-accent: #1F1A17; --line: #3A322C;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 17px/1.6 "Fredoka", system-ui, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1 { font-size: 40px; line-height: 1.15; margin: 8px 0; }
+h2 { font-size: 22px; margin: 32px 0 8px; }
+p, li { color: var(--ink); text-wrap: pretty; }
+.muted { color: var(--muted); }
+header.hero { text-align: center; padding: 24px 0 8px; }
+header.hero img.icon { width: 112px; height: 112px; border-radius: 26px; }
+.tagline { font-size: 20px; color: var(--muted); margin: 0 0 24px; }
+.shots {
+  display: flex; gap: 16px; overflow-x: auto; padding: 8px 0 16px;
+  scroll-snap-type: x mandatory;
+}
+.shots img {
+  width: 220px; height: auto; border-radius: 20px; scroll-snap-align: center;
+  flex: none; box-shadow: 0 8px 24px rgb(0 0 0 / 0.15);
+}
+.card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 16px; padding: 16px 20px; margin: 24px 0;
+}
+nav.back { margin-bottom: 16px; }
+footer { margin-top: 48px; font-size: 14px; color: var(--muted); text-align: center; }
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+<img class="icon" src="icon.png" alt="" width="112" height="112">
+<h1>Pupdoku</h1>
+<p class="tagline">Le casse-tête qui a du chien</p>
+</header>
+<p>Sur chaque grille, placez un chien par zone de couleur, un seul par ligne
+et par colonne, et jamais deux chiens côte à côte. Pas de hasard : que de la
+déduction, à travers plus de 1&nbsp;000 niveaux et 21 mondes.</p>
+<div class="shots">
+<img src="capture_01_partie.webp" alt="Capture d'écran de Pupdoku" width="440" height="956" loading="lazy">
+<img src="capture_02_boss_coeur.webp" alt="Capture d'écran de Pupdoku" width="440" height="956" loading="lazy">
+<img src="capture_03_carte.webp" alt="Capture d'écran de Pupdoku" width="440" height="956" loading="lazy">
+<img src="capture_04_chenil.webp" alt="Capture d'écran de Pupdoku" width="440" height="956" loading="lazy">
+<img src="capture_05_victoire.webp" alt="Capture d'écran de Pupdoku" width="440" height="956" loading="lazy">
+</div>
+<div class="card">
+<h2>Assistance</h2>
+<p>Une question, un achat qui n'apparaît pas, une idée&nbsp;? Écrivez-nous à
+[ADRESSE E-MAIL DE CONTACT]. Pensez à
+préciser votre téléphone et votre version du jeu.</p>
+<p class="muted">Achats&nbsp;: depuis la boutique du jeu, « Restaurer mes achats »
+récupère le Pass et l'offre Sans pub sur un nouvel appareil.</p>
+</div>
+<p><a href="confidentialite.html">Politique de confidentialité</a></p>
+<footer>Pupdoku · <a href="index.html">Accueil</a> · <a href="confidentialite.html">Confidentialité</a></footer>
+</main>
+</body>
+</html>
